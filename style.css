@@ -1,0 +1,1122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.header-main {
+  height: 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 12%;
+  font-weight: 700;
+  word-spacing: 3px;
+}
+.main-nav {
+  gap: 15px;
+}
+.navbar {
+  border: 1px solid rgb(232, 223, 223);
+}
+
+.nav-link {
+  color: black !important;
+  font-weight: 500;
+}
+
+.nav-iconn {
+  width: 10%;
+
+  font-size: 23px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gift-div {
+  min-height: 20%;
+  background-color: rgb(188, 216, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.6rem;
+}
+
+.first-poster {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.first-poster-text {
+  padding: 3rem;
+  width: 50%;
+  height: 100%;
+
+  position: absolute;
+  top: 2px;
+  color: white;
+}
+
+.full-viewport-img {
+  height: 100vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  object-fit: cover; /* Scale image to cover */
+}
+
+.big-text {
+  font-size: 70px;
+  width: 70%;
+  height: 70%;
+  font-weight: 700;
+}
+
+.para {
+  width: 55%;
+  text-align: justify;
+}
+/* banner */
+.banner {
+  height: 60vh; /* Full viewport height */
+  width: 100%; /* Full width */
+  object-fit: cover; /* Scale image to cover */
+  margin-bottom: 0.6rem;
+}
+
+/* trending */
+
+.trend-main {
+  height: 100vh;
+  margin-top: 1.5rem;
+}
+
+.trending-div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.trending-div img {
+  width: 300px;
+}
+
+.trending-div p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+.trend-head {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.zoom-container {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.zoom-container img {
+  transition: transform 0.8s ease;
+}
+
+.zoom-container:hover img {
+  transform: scale(1.2);
+}
+
+/* poster-orange */
+
+.poster-orange-div {
+  margin: 1rem;
+  height: 100vh;
+  width: 100%;
+  margin: 1rem;
+}
+
+.first-socks {
+  height: 100%;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.full-socks1-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.full-socks1-text {
+  position: absolute;
+}
+.second-socks {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  float: right;
+  position: relative;
+}
+
+.full-socks2-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.full-socks2-text {
+  position: absolute;
+}
+.full-socks1-img:hover,
+.full-socks2-img:hover {
+  transform: scale(1.1);
+}
+.full-socks1-text {
+  top: 75%;
+}
+.full-socks2-text {
+  top: 70%;
+}
+.full-socks1-text,
+.full-socks2-text {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.socks-text1 {
+  font-size: medium;
+  color: rgba(237, 238, 242, 0.976);
+}
+
+.socks-text2 {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+/* poster-end */
+
+/* poster-ball */
+
+.poster-ball-div {
+  height: 80vh;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.first-ball {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.full-ball1-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.second-ball {
+  height: 100%;
+  width: 50%;
+
+  float: right;
+  position: relative;
+}
+
+.full-ball2-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  color: white;
+  text-align: center;
+}
+
+.full-ball2-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.full-ball2-text p {
+  font-family: "Times New Roman", Times, serif;
+  text-wrap: wrap;
+  line-height: 30px;
+}
+
+.btn-ball {
+  font-weight: bold;
+}
+
+/* four-socks start */
+
+.four-socks-div {
+  height: 80vh;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.four-socks {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.full-viewport-four-socks-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.four-socks-text {
+  position: absolute;
+  top: 50%;
+  left: 18%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  width: 35%;
+}
+
+.four-socks-small-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.four-socks-big-text {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.four-socks-para {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.btn {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+button.btn:hover {
+  background-color: #ff9800;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* four-socks end */
+
+/* men-women  */
+
+.poster-man-women-div {
+  height: 100vh;
+  width: 100%;
+}
+
+.first-man {
+  height: 100%;
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.full-man-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.full-man1-text {
+  position: absolute;
+}
+.second-woman {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  float: right;
+  position: relative;
+}
+
+.full-woman-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.full-woman-text {
+  position: absolute;
+}
+.full-man-img:hover,
+.full-woman-img:hover {
+  transform: scale(1.1);
+}
+/* .full-man-text{
+    top:55%;
+  }
+  .full-woman-text{
+    top: 70%;
+  } */
+.full-man-text,
+.full-woman-text {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.man-text1,
+.woman-text1 {
+  font-size: 3rem;
+  color: rgba(133, 137, 155, 0.976);
+}
+
+.man-text2,
+.woman-text2 {
+  font-size: 25px;
+  color: white;
+}
+
+/* poster-end-men-women */
+
+/* socks-gift-div  start*/
+
+.socks-gift-div {
+  height: 80vh;
+  width: 100%;
+  background-color: rgb(239, 237, 233);
+}
+
+.first-socks-gift {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+.full-socks-gift-img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.second-socks-gift {
+  height: 100%;
+  width: 50%;
+
+  float: right;
+  position: relative;
+}
+
+.full-second-socks-gift-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 70%;
+  color: black;
+  text-align: center;
+}
+
+.full-second-socks-gift-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+
+}
+
+.socks-gift-p {
+  font-family: "Times New Roman", Times, serif;
+
+  line-height: 30px;
+  color: rgb(153, 149, 172);
+
+  width: 80%;
+  text-align: center;
+  margin-left: 3rem;
+}
+
+
+
+.custom-btn56 {
+  background-color: black; /* Button background color */
+  color: white; 
+  padding: 10px 22px; 
+  font-size: 18px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, color 0.3s ease; /
+}
+
+.custom-btn56:hover {
+  background-color: white;  
+  color: black; 
+}
+
+
+
+.card-div {
+  height: 150vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 1rem;
+  margin: 1rem;
+}
+
+.border-div {
+  border-bottom: 1px solid rgb(141, 130, 130);
+  margin-bottom: 1rem;
+}
+
+.card-row p {
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.card-row i {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.four-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-imgg {
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-imgg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-imgg:hover img {
+  transform: scale(1.1);
+  filter: brightness(80%);
+}
+
+.mycard-1,
+.mycard-2,
+.mycard-3,
+.mycard-4 {
+  color: white;
+  text-align: center;
+  width: calc(25% - 1rem);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+
+.mycard-1 p,
+.mycard-2 p,
+.mycard-3 p,
+.mycard-4 p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.mycard-1 h2,
+.mycard-2 h2,
+.mycard-3 h2,
+.mycard-4 h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.mycard-1 a,
+.mycard-2 a,
+.mycard-3 a,
+.mycard-4 a {
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+
+.mycard-1 a:hover,
+.mycard-2 a:hover,
+.mycard-3 a:hover,
+.mycard-4 a:hover {
+  color: #ffa726;
+  text-decoration: underline;
+}
+
+/* location-div */
+
+.location-div {
+  margin-top: 2rem;
+  height: 50vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(237, 237, 237);
+  color: black;
+}
+.box {
+  text-align: center;
+}
+
+.box i {
+  font-size: 50px;
+}
+.box-p {
+  font-size: 20px;
+  font-weight: bold;
+  word-spacing: 10px;
+}
+
+.box-small {
+  color: rgb(139, 139, 147);
+}
+
+.footer {
+  height: 30vh;
+  background-color: black;
+  color: white;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.foot-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.foot-2 {
+  margin-top: 3rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.foot-head {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer p,
+.footer a {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-main {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-nav {
+    gap: 0px;
+  }
+  .navbar {
+    border: 1px solid rgb(232, 223, 223);
+  }
+
+  .nav-link {
+    color: black !important;
+    font-weight: 500;
+  }
+
+  .nav-iconn {
+    width: 100%;
+
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .gift-div {
+    background-color: rgb(188, 216, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .gift-div h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  /* posterrrr */
+  .first-poster {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+  .first-poster-text {
+    width: 100%;
+    padding: 0.5rem;
+    position: absolute;
+
+    color: white;
+  }
+
+  .full-viewport-img {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .big-text {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    width: 70%;
+    height: 50%;
+  }
+
+  .para {
+    width: 100%;
+  }
+
+  /* banner */
+
+  .banner {
+    height: 12vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.6rem;
+  }
+
+  .trend-main {
+    height: auto;
+    margin-top: 0.5rem;
+  }
+
+  .trending-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .trending-div img {
+    width: 200px;
+  }
+
+  .trend-head {
+    font-size: 20px;
+  }
+
+  .trending-div p {
+    font-size: small;
+  }
+
+  .zoom-container {
+    margin-bottom: 1rem;
+  }
+
+  /* poster-orange */
+  .poster-orange-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-socks,
+  .second-socks {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .full-socks1-img,
+  .full-socks2-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .full-socks1-img:hover,
+  .full-socks2-img:hover {
+    transform: scale(1.1);
+  }
+  .full-socks1-text{
+line-height: 60px;
+width: 80%;
+
+top: 50%;
+left: 50%;
+  }
+
+  .full-socks2-text{
+    line-height: 40px;
+    width: 80%;
+
+    top: 50%;
+    left: 50%;
+  }
+
+
+  .full-socks1-text,
+  .full-socks2-text {
+    position: absolute;
+   
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    
+
+  }
+
+  /* poster-ball */
+
+  .poster-ball-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-ball {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+  }
+
+  .full-ball1-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-ball {
+    height: 100%;
+    width: 100%;
+  }
+
+  .full-ball2-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .full-ball2-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .full-ball2-text p {
+    font-family: "Times New Roman", Times, serif;
+    text-wrap: wrap;
+    line-height: 30px;
+  }
+
+  /* four-socks start */
+
+  .four-socks-div {
+    height: 100vh;
+    margin-top: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .four-socks {
+    height: 59%;
+    width: 100%;
+    position: relative;
+  }
+
+  .full-viewport-four-socks-img {
+    height: 75%;
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .four-socks-text {
+    position: absolute;
+    top: 588px;
+    left: 50%;
+    /* transform: translate(-50%, -50%);  */
+    text-align: center;
+    color: rgb(164, 152, 152);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .four-socks-small-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+
+  .four-socks-big-text {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  .four-socks-para {
+    font-size: 1.5rem;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  button.btn {
+    background-color:rgb(240, 231, 231);
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 5px;
+  }
+
+  button.btn:hover {
+    background-color: #ff9800;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+
+  /* four-socks end */
+
+  /* man-woman */
+
+  .poster-man-women-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-man,
+  .second-woman {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .full-man-img,
+  .full-woman-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .full-man-img:hover,
+  .full-woman-img:hover {
+    transform: scale(1.1);
+  }
+
+  .full-man-text,
+  .full-woman-text {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    font-weight: bold;
+
+    line-height: 50px;
+  }
+
+  .man-text1,
+  .woman-text1 {
+    font-size: 2rem;
+    color: rgba(133, 137, 155, 0.976);
+  }
+
+  .man-text2,
+  .woman-text2 {
+    font-size: 15px;
+    color: white;
+  }
+
+  /* man-woman-end */
+
+  /* socks-gift -start */
+
+  .socks-gift-div {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ ;
+  }
+
+  .first-socks-gift {
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+  }
+
+  .full-socks-gift-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .second-socks-gift {
+    height: 100%;
+    width: 100%;
+  }
+
+  .full-second-socks-gift-text {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .full-second-socks-gift-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .socks-gift-p {
+    font-family: "Times New Roman", Times, serif;
+    text-wrap: wrap;
+    line-height: 30px;
+  }
+
+  /* card */
+  .card-div {
+    height: 400vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  /* location-div */
+
+  .location-div {
+    margin-top: 2rem;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    color: black;
+  }
+  .box {
+    text-align: center;
+  }
+
+  .box i {
+    font-size: 50px;
+  }
+  .box-p {
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 10px;
+  }
+
+  .box-small {
+    color: rgb(139, 139, 147);
+  }
+
+  .footer {
+    padding: 1rem;
+
+    height: 35vh;
+  }
+  .foot-2 {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  .foot-head {
+    font-size: 1.2rem;
+  }
+
+  .footer p,
+  .footer a {
+    font-size: 0.9rem;
+  }
+
+  .foot-1,
+  .foot-2 {
+    flex-direction: column;
+  }
+}
